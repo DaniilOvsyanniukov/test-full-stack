@@ -94,7 +94,7 @@ const InputForm = ({ active, setActive, inputOf, setInputOf, editMemberId}) => {
               Parents 
               <input
                 className='input'
-                type="tel"
+                type="text"
                 name="parents"
                 value={parents}
                 disabled={inputOf} 
