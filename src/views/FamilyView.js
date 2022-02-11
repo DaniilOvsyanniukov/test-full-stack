@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {useDispatch, useSelector } from "react-redux";
-import FamilyList from "../components/FamilyList/FamilyList";
 import TitleList from "../components/TitleList/TitleList"
 import InputForm from "../components/InputForm/InputForm";
 import selectors from '../redux/family/family-selectors';
