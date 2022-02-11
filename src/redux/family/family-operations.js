@@ -16,13 +16,14 @@ import {
 
 import axios from "axios";
 
-axios.defaults.baseURL = `http://localhost:8083/api`;
+axios.defaults.baseURL = `https://test-full-stack-server.herokuapp.com/api`;
+
+
 
 const fatchAllFamily = (userId) => async (dispatch) => {
   dispatch(fatchFamilyRequest());
   try {
     const { data } = await axios.get(`/tree/?id=${userId}`);
-    console.log(data)
     dispatch(fatchFamilySuccess(data));
   } catch (error) {
     dispatch(fatchFamilyError(error));
